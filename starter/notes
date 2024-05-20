@@ -1,0 +1,13 @@
+SECTION 2 - HTML
+
+- HTML: HyperText Markup Language. It's a markup language (used to structure and describe content). Not a programming language
+- only one h1 per page
+- use <strong> over <b> because strong has semantic value
+- use <em> over <i> because em (emphasis) has semantic value
+- alt tags help tells search engines wahts in the image
+- anchor element without href doesnt act as a link. the href is what converts and a tag to a link
+- semantic HTML means using certain tags for certain purposes
+  - also helps with accessibilty and analysis for search engines
+
+
+SECTION 3 - CSS
