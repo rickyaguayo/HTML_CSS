@@ -4,7 +4,7 @@ SECTION 2 - HTML
 - only one h1 per page
 - use <strong> over <b> because strong has semantic value
 - use <em> over <i> because em (emphasis) has semantic value
-- alt tags help tells search engines wahts in the image
+- alt tags help tells search engines whats in the image
 - anchor element without href doesnt act as a link. the href is what converts and a tag to a link
 - semantic HTML means using certain tags for certain purposes
   - also helps with accessibilty and analysis for search engines
@@ -12,14 +12,14 @@ SECTION 2 - HTML
 
 SECTION 3 - CSS
 
-- unitless line-height is the value times the font size
+- unitless line-height is the value given times the font size
   Ex: 
-    font-size: 16
-    line-height: 2 (line hieght is 32px)
-- when colors in all 3 channels (rgb) are the same, it yields a gray
-  - #444444 
+    font-size: 16px
+    line-height: 2 (line height is 32px)
+- when colors in all 3 channel pairs are the same, it yields a gray
+  - #f7f7f7 
   - rgb(183, 183, 183)
-  - there are 156 pure grays to choose from
+  - there are 256 pure grays to choose from
 - :nth-child() takes keywords
   - Ex: li:nth-child(even) { color: red }
 - when using psuedo classes like first or last child to select, it will choose the actual first/last child
@@ -39,3 +39,26 @@ SECTION 3 - CSS
 - most inherited styles are related to text. font-family, font-size, color, etc.
   - not all properties from parent elements get inherited. like border
   - universal selector is used to inherit all properties to elements
+- border is still considered to be inside the element
+- CSS Box Model: 
+  - Content: text, images, etc
+  - Border: a line around the element still inside of the element
+  - Padding: Invisible space around the content, inside of the element
+  - Margin: Space outside of the element, between elements
+  - Fill area: Area that gets filled with background color of background image. This includes the content and the padding, but not the border
+- default height and width (no border-box) is calculated by adding border + padding + content
+  - with border-box property, the margin is included
+- when adding space between sections. margin-bottom is recommended
+- collapsing margins: when two margins occupy the same space, they are not added together. Only one (the bigger one) will be visible. 
+  Ex: <p>upper</p>
+      <h3>lower</h1>
+
+      p {
+        margin-bottom: 15px;
+      }
+
+      h3 {
+        margin-top: 40px;
+      }
+  - the space between will be only 40px. not 55px
+  - this changes with border-box
