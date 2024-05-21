@@ -11,3 +11,31 @@ SECTION 2 - HTML
 
 
 SECTION 3 - CSS
+
+- unitless line-height is the value times the font size
+  Ex: 
+    font-size: 16
+    line-height: 2 (line hieght is 32px)
+- when colors in all 3 channels (rgb) are the same, it yields a gray
+  - #444444 
+  - rgb(183, 183, 183)
+  - there are 156 pure grays to choose from
+- :nth-child() takes keywords
+  - Ex: li:nth-child(even) { color: red }
+- when using psuedo classes like first or last child to select, it will choose the actual first/last child
+  - article p:first-child {}. This will only work if the first child of the article is a p, otherwise nothing will happen
+- :link targets anything with an href attribute
+  - Ex: a:link { color: red }
+- text-decoration can also take values like border
+  - Ex: text-decoration: underline dotted #f7f7f7
+- define link psuedo classes in order of :link, :visited, :hover, then :active (LHVA)
+- CSS heirarchy:
+  1. !important
+  2. Inline styles
+  3. Id selectors
+  4. Class or psuedo class selectors
+  5. Element selectors
+  6. Universal selectors
+- most inherited styles are related to text. font-family, font-size, color, etc.
+  - not all properties from parent elements get inherited. like border
+  - universal selector is used to inherit all properties to elements
