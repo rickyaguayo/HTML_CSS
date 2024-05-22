@@ -62,3 +62,17 @@ SECTION 3 - CSS
       }
   - the space between will be only 40px. not 55px
   - this changes with border-box
+- inline elements applies the box model in a different way:
+  - heights and widths dont apply
+  - padding and margins are only applied horizontally (left and right)
+- inline-block elements is a hybrid of inline and block elements
+  - occupies only contents space and causes no line breaks like inline elements
+  - box model applies normally like block elements
+- images are inherently inline-block elements
+- psuedo elements are not in the html but are still styleable via CSS
+- psuedo elements use :: while psuedo classes use :
+  - Ex: class - li:first-child. element - h1::first-letter
+- adjacent sibling selector is the next sibling. used with +
+  - Ex: h3 + p { color: red; }
+- ::before and ::after require the content property. even if left blank
+- psuedo elements inherently have inline-block
