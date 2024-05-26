@@ -45,9 +45,8 @@ SECTION 3 - CSS
   - Border: a line around the element still inside of the element
   - Padding: Invisible space around the content, inside of the element
   - Margin: Space outside of the element, between elements
-  - Fill area: Area that gets filled with background color of background image. This includes the content and the padding, but not the border
-- default height and width (no border-box) is calculated by adding border + padding + content
-  - with border-box property, the margin is included
+  - Fill area: Area that gets filled with background color of background image. This includes the content and the padding, but not the border or margin
+- default height and width is calculated by adding border + padding + content
 - when adding space between sections. margin-bottom is recommended
 - collapsing margins: when two margins occupy the same space, they are not added together. Only one (the bigger one) will be visible. 
   Ex: <p>upper</p>
@@ -61,7 +60,6 @@ SECTION 3 - CSS
         margin-top: 40px;
       }
   - the space between will be only 40px. not 55px
-  - this changes with border-box
 - inline elements applies the box model in a different way:
   - heights and widths dont apply
   - padding and margins are only applied horizontally (left and right)
@@ -74,5 +72,5 @@ SECTION 3 - CSS
   - Ex: class - li:first-child. element - h1::first-letter
 - adjacent sibling selector is the next sibling. used with +
   - Ex: h3 + p { color: red; }
-- ::before and ::after require the content property. even if left blank
+- ::before and ::after require the content property. even if left blank ("")
 - psuedo elements inherently have inline-block

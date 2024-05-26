@@ -1,0 +1,36 @@
+SECTION 4 - LAYOUTS
+
+- 2 kinds of layouts:
+  1. Page layout: Layout of the entire page composing of sections
+  2. Section layout: Layout of individual sections that make up the page
+
+- 3 kinds of ways to produce layouts:
+  1. Float layouts: layouts made by using the float property. Mostly outdated now
+  2. Flexbox: Modern way of laying out elements in a 1 dimensional row without floats. Perfect for component layouts
+  3. CSS Grid: For laying out elements in a 2 dimensional gird. Perfect for page layouts and complex component layouts
+
+- Floats are like absolute positioning as in it leaves the normal flow of the page. But unlike absolute positioning, the rest of the elements will wrap around a floated element.
+- The other elements around the floated element still act as they are started on the left of the page. Just scooted because of the floated element
+  - If you want the element to start "scooted", it also has to be floated
+- Floated elements can still have margins
+- Container of floated elements will not adjust its height to the element causing collapsing elements.
+- Collapsing elements - when an elements loses its height because the children are taking out of flow
+
+- The clear property puts things back into flow by clearing elements that precede it. 
+Ex: 
+  div {
+    clear: right | left | both
+  }
+- If you clear one side, it will clear all elements that are floated in that direction. Both will clear everything
+
+- Clearfix hack: before, one would have to add a div (as a sibing to the floated elements) and clear it to fix floated elements flow. The clearfix hack adds a cleared pseudo element with the clear property to avoid adding a bunch of empty divs with the clear property on it. Add this class to the element that should clear the floated elements
+Ex: .clearfix::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+- clearing only works on block elements and pseudo elements are inline-block, which is why you have to change the display.
+
+- box-sizing: border-box;: removes the calculation of the box model. when specifying the width, it includes everything inside the border
+- default to box-sizing is content-box
+- padding and borders take from the width rather than adding to it
