@@ -49,7 +49,7 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  padding: 50px 0;
+  padding: 50px 40px;
 }
 
 /* SMALLER ELEMENTS */
@@ -136,9 +136,9 @@ li:last-child {
   margin-left: 0;
 }
 
-body {
-  /* background-color: orangered; */
-}
+/* body {
+  background-color: orangered;
+} */
 
 /* .first-li {
   font-weight: bold;
@@ -152,14 +152,14 @@ li:last-child {
   font-style: italic;
 }
 
-li:nth-child(even) {
-  /* color: red; */
-}
+/* li:nth-child(even) {
+  color: red;
+} */
 
 /* Misconception: this won't work! */
-article p:first-child {
+/* article p:first-child {
   color: red;
-}
+} */
 
 /* Styling links */
 a:link {
@@ -197,7 +197,6 @@ nav a:link {
   display: block; */
 
   margin-right: 30px;
-  margin-top: 10px;
   display: inline-block;
 }
 
@@ -222,9 +221,9 @@ h1::first-letter {
   margin-right: 5px;
 }
 
-h3 + p::first-line {
-  /* color: red; */
-}
+/* h3 + p::first-line {
+  color: red;
+} */
 
 h2 {
   /* background-color: orange; */
@@ -267,9 +266,9 @@ nav p {
 } */
 
 /* FLOATS */
-
+/*
 .author {
-  /* padding-left: 80px; */
+  padding-left: 80px;
   padding-top: 10px;
   margin-left: 20px;
   float: left;
@@ -310,4 +309,63 @@ aside {
 
 footer {
   clear: both;
+}
+*/
+
+/* FLEXBOX */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.author {
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.row {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+
+aside {
+  flex: 0 0 300px;
+}
+
+article {
+  flex: 1;
+  /* this is allowing it to grow however it needs to fit the predetermined dimensions of the gap and the aside */
+  margin-bottom: 0;
 }

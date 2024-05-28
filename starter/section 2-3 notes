@@ -16,19 +16,22 @@ SECTION 3 - CSS
   Ex: 
     font-size: 16px
     line-height: 2 (line height is 32px)
+- text-decoration can also take values like border
+  - Ex: text-decoration: underline dotted #f7f7f7
 - when colors in all 3 channel pairs are the same, it yields a gray
   - #f7f7f7 
   - rgb(183, 183, 183)
   - there are 256 pure grays to choose from
+
 - :nth-child() takes keywords
   - Ex: li:nth-child(even) { color: red }
 - when using psuedo classes like first or last child to select, it will choose the actual first/last child
   - article p:first-child {}. This will only work if the first child of the article is a p, otherwise nothing will happen
+
 - :link targets anything with an href attribute
   - Ex: a:link { color: red }
-- text-decoration can also take values like border
-  - Ex: text-decoration: underline dotted #f7f7f7
 - define link psuedo classes in order of :link, :visited, :hover, then :active (LHVA)
+
 - CSS heirarchy:
   1. !important
   2. Inline styles
@@ -36,9 +39,11 @@ SECTION 3 - CSS
   4. Class or psuedo class selectors
   5. Element selectors
   6. Universal selectors
+
 - most inherited styles are related to text. font-family, font-size, color, etc.
   - not all properties from parent elements get inherited. like border
   - universal selector is used to inherit all properties to elements
+  
 - border is still considered to be inside the element
 - CSS Box Model: 
   - Content: text, images, etc
@@ -60,6 +65,7 @@ SECTION 3 - CSS
         margin-top: 40px;
       }
   - the space between will be only 40px. not 55px
+
 - inline elements applies the box model in a different way:
   - heights and widths dont apply
   - padding and margins are only applied horizontally (left and right)
@@ -67,10 +73,12 @@ SECTION 3 - CSS
   - occupies only contents space and causes no line breaks like inline elements
   - box model applies normally like block elements
 - images are inherently inline-block elements
+
 - psuedo elements are not in the html but are still styleable via CSS
 - psuedo elements use :: while psuedo classes use :
   - Ex: class - li:first-child. element - h1::first-letter
-- adjacent sibling selector is the next sibling. used with +
-  - Ex: h3 + p { color: red; }
 - ::before and ::after require the content property. even if left blank ("")
 - psuedo elements inherently have inline-block
+
+- adjacent sibling selector is the next sibling. used with +
+  - Ex: h3 + p { color: red; }

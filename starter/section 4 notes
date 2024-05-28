@@ -9,6 +9,7 @@ SECTION 4 - LAYOUTS
   2. Flexbox: Modern way of laying out elements in a 1 dimensional row without floats. Perfect for component layouts
   3. CSS Grid: For laying out elements in a 2 dimensional gird. Perfect for page layouts and complex component layouts
 
+FLOATS:
 - Floats are like absolute positioning as in it leaves the normal flow of the page. But unlike absolute positioning, the rest of the elements will wrap around a floated element.
 - The other elements around the floated element still act as they are started on the left of the page. Just scooted because of the floated element
   - If you want the element to start "scooted", it also has to be floated
@@ -32,5 +33,42 @@ Ex: .clearfix::after {
 - clearing only works on block elements and pseudo elements are inline-block, which is why you have to change the display.
 
 - box-sizing: border-box;: removes the calculation of the box model. when specifying the width, it includes everything inside the border
-- default to box-sizing is content-box
+- default is box-sizing: content-box;
 - padding and borders take from the width rather than adding to it
+
+FLEXBOX:
+- Flexbox is a set of related CSS properties for building 1 dimensional layouts
+- The main idea behind flexbox is that empty space inside a container element can be automatically divided by its child elements
+- Flexbox makes it easy to automatically align items to one another inside a parent container, both horizontally and vertically
+- Flexbox solves common problems like vertical centering and creating equal height columns
+- Flexbox is a perfect replacement for floats
+
+- Container of flexed items must have display: flex; and the children will be flexed. this is the flex container. children will be the flex items
+- the main axis is horizontal. cross axis is vertical
+- Flexed items will automatically take the height of the tallest sibling. 
+- align-items changes the vertical pattern of the flexed items. default is stretch (along the cross axis)
+- justify-content will change the horizontal pattern. default is flex-start (along the main axis)
+
+- order, by default, gives all elements the value of 0. which means giving an element the value of -1, then it will be the first element. giving an element 1 will make it the last one. (works like z-index)
+- gap adds a gap between flex items without having to add padding/margin
+- if you add a margin, then both the gap and the margin will appear. the margin will be in between the item and the gap
+
+- flex property is a shorthand for flex-grow, flex-shrink and flex-basis
+- flex-basis is used to set a width without using the width property
+  - default is auto
+  - if the item is larger than the flex-basis, then it will just use whatever space it needs
+  - if the container is not big enough to hold all the items based on the flex-basis, flexbox will shrink them evenly because of flex-shrink: 1;
+- flex-shrink is used to decide whether or not flexbox is allowed to shrink the items within the container if the width is larger than the container.
+  - default is 1
+  - flex-shrink: 1; means items are allowed to shrink
+  - flex-shrink: 0; means items aren't allowed to shrink and will take the width (or flex-basis) given to them
+- flex-grow is used to allow items to take up space evenly.
+  - default is 0
+  - the number given is a multiplier. if you set the value to 2, then that item will get double the remaining space than the rest. it doesnt double the width of the item, it gives the item double the space that was in between beforehand
+
+- flex is a shorthand for these three properties
+- in order it's: flex: flex-grow flex-shrink flex-basis.
+  - Ex: flex: 0 0 200px;
+- if only one number is used, it will assume flex-grow.
+  - flex: 1 === flex-grow: 1;
+- it is better to use flex with the 3 properties than any of them alone
