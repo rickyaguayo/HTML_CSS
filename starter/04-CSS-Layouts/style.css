@@ -27,7 +27,7 @@ body {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   /* height: 80px; */
 }
 
@@ -36,9 +36,9 @@ nav {
   /* text-align: center; */
 }
 
-article {
+/* article {
   margin-bottom: 60px;
-}
+} */
 
 .post-header {
   margin-bottom: 40px;
@@ -353,7 +353,7 @@ footer {
   font-style: italic;
 }
 
-.row {
+/* .row {
   display: flex;
   gap: 75px;
   margin-bottom: 60px;
@@ -366,6 +366,23 @@ aside {
 
 article {
   flex: 1;
-  /* this is allowing it to grow however it needs to fit the predetermined dimensions of the gap and the aside */
+  this is allowing it to grow however it needs to fit the predetermined dimensions of the gap and the aside 
   margin-bottom: 0;
+} */
+
+/* CSS GRID LAYOUT */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 60px 75px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+}
+
+footer {
+  grid-column: 1 / -1;
 }

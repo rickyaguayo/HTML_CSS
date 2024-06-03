@@ -43,7 +43,7 @@ FLEXBOX:
 - Flexbox solves common problems like vertical centering and creating equal height columns
 - Flexbox is a perfect replacement for floats
 
-- Container of flexed items must have display: flex; and the children will be flexed. this is the flex container. children will be the flex items
+- Container of flexed items must have display: flex; and the children will become flex items. this is the flex container.
 - the main axis is horizontal. cross axis is vertical
 - Flexed items will automatically take the height of the tallest sibling. 
 - align-items changes the vertical pattern of the flexed items. default is stretch (along the cross axis)
@@ -72,3 +72,48 @@ FLEXBOX:
 - if only one number is used, it will assume flex-grow.
   - flex: 1 === flex-grow: 1;
 - it is better to use flex with the 3 properties than any of them alone
+
+CSS-GRID:
+- set of properties to build a 2 dimensional grid
+- main idea behind css-grid is to divide a container into rows/columns and fill it with children
+- display: grid; sets up container for grid
+
+- grid-template-columns/rows allows you to set up width/height of wanted columns/rows
+- fr (fraction): unit for free space. great for responsiveness
+- repeat(# of rows/cols, height/width): shorthand to specify multiple rows/columns
+  - Ex: grid-template-columns: repeat(4, 1fr)
+  - Ex: grid-template-rows: repeat(4, 1fr)
+  - for rows, a height is required. if there is a height defined even for one item, that will equal the fr. if no height is defined, then one fr will equal the tallest item
+- like flexbox, preset heights/widths will be used unless otherwise specified. other elements around it will accomadate to specified heights/widths
+- gap can also be used to specify a gap in css grid. this will use the same gap for both columns and rows
+- if different gaps are needed, use column-gap or row-gap
+- also able to use gap for both. row gap is the first value and column-gap is the second
+  - Ex: gap: 10px 20px (row column)
+- grid also uses align-items but uses justify-items as well
+- can use align-content and justify-content, but not as used within grid
+- explicit row: row where you explicitly defined the width/height
+- implicit row: row that takes leftover items outside of explicit rows
+
+- items can be placed in a certain spot using grid-column and grid-row. the values are the starting row/col and the ending row/col.
+  - Ex: .item-3 {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+  - this places the item between columns 2 and 3. and between rows 1 and 2. (numbers are representing grid-lines. see screenshot. can also turn on grid in dev tools to see lines)
+  - shorthand is just the first number if the second number is one above the first
+  - Ex: .item-3 {
+      grid-column: 2;
+      grid-row: 1;
+    } (this is the same as above)
+  - if the second number isnt one above the first, it will stretch itself between the 2 numbers
+  - Ex: .item-3 {
+      grid-column: 2 / 4; 
+      grid-row: 1;
+    }
+  - the span keyword can be used in place of the second number.
+    - Ex: grid-column: 2 / span 2; (this is the same as above)
+  - another shorthand for spanning to the end is using -1
+    - Ex: grid-column: 1 / -1; spans the whole row
+
+- with grid, align and justify is still used. however for the keywords are a bit different from flexbox. flex-end -> end. flex-start -> start 
+- justify/align-self is to override properties set on the row/cols
