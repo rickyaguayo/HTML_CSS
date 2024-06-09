@@ -1,0 +1,72 @@
+SECTION 5 - WEB DESIGN
+
+Web design vs Web Developer
+- Web designers create the overall look and feel of the website
+- Web developers implement the design using HTML, CSS and JS
+
+Good design: 
+- creates an immediate lasting good impression of the brand/product
+- makes the user trust the brand right away
+- increases the perceived value of the brand/product
+- gives users exactly what theyre looking for when coming to the site
+
+Bad design: 
+- makes users believe they dont really care about the brand/product
+- makes the user insecure about trusting the brand/product
+- makes the brand/product seem cheap
+- leaves users confused and makes it hard for them to reach their goal 
+
+Web Design ingredients: 
+  1. Typography
+  2. Colors
+  3. Images/illustrations
+  4. Icons
+  5. Shadows
+  6. Border radius
+  7. Shadows
+  8. Visual Heirarchy
+  9. User Experience
+  10. Components/layouts
+
+Web personalities:
+  1. Serious/Elegant: For luxury and elegance. based on thin serif typefaces, golden or pastel colors and big high quality images
+  2. Minimalist/simple: focuses on the essntial text context, using small or medium sized sans-serif black text, line and few images and icons
+  3. Plain/neutral: design that gets out of the way by using neutral and small typefaces, and a very structured layout. Common amongst big companies like Microsoft
+  4. Boold/confident: makes an impact by featuring big and bold typeography paired with confident big and bright colored blocks
+  5. Calm/peaceful: for products and services that care, transmitted by calming pastel colors, soft serif headings and matching images/illustrations
+  6. Startup/upbeat: widely used in startups, featuring medium sized typefaces, light gray text and backgrounds and rounded elements
+  7. Playful/fun: colorful and round designs, fueled by creative elements like hand drawn icons illustrations, animations and fun language
+
+~~~TYPFACE~~~
+Serif:
+  - creates a traditional/classic look and feel
+  - conveys trustworthiness
+  - good for long text
+
+Sans-serif:
+  - modern look and feel
+  - clean and simple
+  - easier to choose for beginner designers
+
+- Use only good/modern typefaces
+  - Sans-serif: Inter, Open Sans, Roboto, Monserrat, Lato, Work Sans
+  - Serif: Merriweather, Aleo, Playfair Display, Cormorant, Cardo, Lora
+- use only one typeface per page. If you need multiple, limit to 2 
+- choose the right typeface for your website personality
+  - decide between serif and sans-serif
+  - experiment with typefaces to find one that fits
+  - don't be scared to try different ones even while designing/developing
+
+- when choosing font sizes, limit choices. use a type scale tool or a predefined range
+- for normal text, use font sized between 16px and 32px 
+- for long text (like a blog post), try 20px or above
+- for headlines, you can go big. 50px and above with 600 boldness. depends on personality
+- for any text, dont use font weight below 400. 400 is normal. this may cause unreadablilty
+
+- use less than 75 characters per line
+- for normal sized text, use a line height between 1.5 and 2. for big text, go below 1.5.
+  - the smaller and longer the text is, the larger the line height needs to be.
+- decrease the letter spacing in headlines if it looks unnatural
+- experiment with all caps for short titles. make them small, bold and decrease letter spacing
+- dont justify text
+- dont center long text block. short ones are usually fine

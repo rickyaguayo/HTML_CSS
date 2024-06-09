@@ -71,7 +71,11 @@ FLEXBOX:
   - Ex: flex: 0 0 200px;
 - if only one number is used, it will assume flex-grow.
   - flex: 1 === flex-grow: 1;
-- it is better to use flex with the 3 properties than any of them alone
+- two unitless numbers will yield assume flex-grow then flex-shrink
+  - Ex: flex: 0 1
+- two numbers and one has a unit assumes flex-grow then flex-basis
+  - Ex: flex: 0 10px
+- it is better to use flex shorthand than any of them alone
 
 CSS-GRID:
 - set of properties to build a 2 dimensional grid
@@ -83,7 +87,7 @@ CSS-GRID:
 - repeat(# of rows/cols, height/width): shorthand to specify multiple rows/columns
   - Ex: grid-template-columns: repeat(4, 1fr)
   - Ex: grid-template-rows: repeat(4, 1fr)
-  - for rows, a height is required. if there is a height defined even for one item, that will equal the fr. if no height is defined, then one fr will equal the tallest item
+  - for rows, height property must be defined. if there is a height defined even for one item, that will equal the fr. if no height is defined, then one fr will equal the tallest item
 - like flexbox, preset heights/widths will be used unless otherwise specified. other elements around it will accomadate to specified heights/widths
 - gap can also be used to specify a gap in css grid. this will use the same gap for both columns and rows
 - if different gaps are needed, use column-gap or row-gap
@@ -112,8 +116,8 @@ CSS-GRID:
     }
   - the span keyword can be used in place of the second number.
     - Ex: grid-column: 2 / span 2; (this is the same as above)
-  - another shorthand for spanning to the end is using -1
+  - a shorthand for spanning to the end is using -1
     - Ex: grid-column: 1 / -1; spans the whole row
 
-- with grid, align and justify is still used. however for the keywords are a bit different from flexbox. flex-end -> end. flex-start -> start 
+- with grid, align and justify is still used. however for the keywords are a bit different from flexbox. end instead of flex-end and start instead of flex-end 
 - justify/align-self is to override properties set on the row/cols
