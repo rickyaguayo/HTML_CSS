@@ -23,7 +23,7 @@ Web Design ingredients:
   4. Icons
   5. Shadows
   6. Border radius
-  7. Shadows
+  7. Whitespace
   8. Visual Heirarchy
   9. User Experience
   10. Components/layouts
@@ -32,7 +32,7 @@ Web personalities:
   1. Serious/Elegant: For luxury and elegance. based on thin serif typefaces, golden or pastel colors and big high quality images
   2. Minimalist/simple: focuses on the essntial text context, using small or medium sized sans-serif black text, line and few images and icons
   3. Plain/neutral: design that gets out of the way by using neutral and small typefaces, and a very structured layout. Common amongst big companies like Microsoft
-  4. Boold/confident: makes an impact by featuring big and bold typeography paired with confident big and bright colored blocks
+  4. Bold/confident: makes an impact by featuring big and bold typography paired with confident big and bright colored blocks
   5. Calm/peaceful: for products and services that care, transmitted by calming pastel colors, soft serif headings and matching images/illustrations
   6. Startup/upbeat: widely used in startups, featuring medium sized typefaces, light gray text and backgrounds and rounded elements
   7. Playful/fun: colorful and round designs, fueled by creative elements like hand drawn icons illustrations, animations and fun language
@@ -62,6 +62,8 @@ Sans-serif:
 - for long text (like a blog post), try 20px or above
 - for headlines, you can go big. 50px and above with 600 boldness. depends on personality
 - for any text, dont use font weight below 400. 400 is normal. this may cause unreadablilty
+- good to have a system in place for font size and spacing. (type-scale.com)
+  - helps with scrambling with different sizes 
 
 - use less than 75 characters per line
 - for normal sized text, use a line height between 1.5 and 2. for big text, go below 1.5.
@@ -70,3 +72,23 @@ Sans-serif:
 - experiment with all caps for short titles. make them small, bold and decrease letter spacing
 - dont justify text
 - dont center long text block. short ones are usually fine
+
+~~COLORS~~
+- make the colors match the personality. colors convey meaning
+  - see screenshot for meanings of colors
+- use a good color tone. nothing random
+  - tools: open color, tailwindcss, flat ui colors 2 
+- in any color palatte, you need 2 colors. a main color and a grey color
+  - grey doesnt necessarily mean grey. it can be a dark version of any color
+- an accent color can also be added if wanted. as long as it fits with the main and grey
+  - tools: coolor or palleton
+- for diversity, create lighter (tints) and darker (shades) versions of your colors
+  - tools: tint & shade generator
+- use main color to draw attention to the most important parts of the page. (CTAs, logo, etc)
+- use colors to add interesting accents or make entire components/sections stand out
+- you can use the colors strategically in images and illustrations
+- on dark colored backgrounds, try using a tint (lighter version) of the background for the text
+- text should usually not be completely black. this can be heavy and uninviting. best to lighten it up
+- dont make it too light. use a tool to check contrast between background and text.
+  - important for accebility reasons
+  - contrast needs to be 4.5:1 for normal text. 3:1 for large text (18px+)
