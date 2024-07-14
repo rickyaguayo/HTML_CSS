@@ -92,3 +92,75 @@ Sans-serif:
 - dont make it too light. use a tool to check contrast between background and text.
   - important for accebility reasons
   - contrast needs to be 4.5:1 for normal text. 3:1 for large text (18px+)
+
+~~IMAGES~~
+- different kinds of images: product photos, storytelling photos, illustrations and patterns
+- images support website's message and story. only use relevant images
+- original images are best. people look for authenticity. do not use overused, generic images 
+  - tools: unsplash, pexels, drawkit, undraw
+- use images with real people. can trigger user's emotion
+- crop image to fit message
+- experiment with combining photos, illustrations and patterns
+- text on images
+  - darken or brighten image for readability
+  - position text into neutral area of image
+  - put text into a box with
+- to account for high res screens, make images 2x the display size (scale factor)
+  - if the image in the code is 300x300, the image should be at least 600x600
+  - scale factor: actual pixels the screen contains divided by pixels represented on the screen
+  - on high res screens scale factor can be 2-3x (2-3 pixels are representing 1 actual screen pixel)
+- compress images for a lower file size and better performance
+- when using images side by side, make sure they have the same aspect ratio
+
+~~ICONS~~
+- use good icon packs. loads of free (and paid) ones
+  tools: phosphor icons, ionicons, icons8
+- use only one icon pack. dont mix
+- use svg icons or icon fonts. dont use .png or .jpg for icons
+  - svgs are vector based meaning they can scale indefinitely without getting blurry
+- when picking icon packs, adjust to the website's personality
+  - match roundness, weight and fill/outline to the chosen typography
+- use icons:
+  - to provide visual assitance to text
+  - for feature blocks
+  - associated with actions and label them (unless there is no space or the icon is 100% clear)
+  - as bullet points
+- to keep icons neutral use the same color as the text. to attract attention to them, a different color
+- dont confuse the user. icons need to fit the text or action
+- dont make icons larger than what they were designed for. enclose them in a shape if needed
+
+~~SHADOWS~~
+- shadows create depth/3D effect
+- in the last 15 years, trends have gone from shadows -> flat -> flat/shadow hybrid
+- use shadows well:
+  - shadows arent needed if it doesnt fit the website personality
+    - less shadows for serious/elegant. more for playful/fun
+  - use shadows in small doses. everything doesnt need it
+  - go light on shadows. dark shadows look unnatrual
+- when to use shadows: 
+  - use small shadows for small elements that need to stand out
+    - ctas, forms, small images, etc
+  - use medium sized shadows for larger areas that should stand out a bit more
+    - entire sections, cards, info panels, etc
+  - use large shadows for areas that should really float above the interface
+    - navigations, modals, etc
+  - experiement with mouse interaction (hover and click)
+  - experiement with glows (colored shadows)
+- box-shadow can have 5 values:
+  Ex: box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0,1)
+  - first value is x-axis offset. negative value means left
+  - second value is y-axis offset. negative value means top
+  - third value is blur-radius. the higher the value, the blurrier
+  - fourth value is spread-radius. the higher the value, the more it will spread
+  - fifth value is the color of the shadow. default is black
+- text-shadow can be used for text
+
+~~BORDER RADIUS~~
+- increase playfulness/fun of the design. makes it looks less serious
+  - the less border radius makes it seem more serious
+- typefaces have a certain amount of roundness. match the border radius to that
+- use border radius on images, buttons, around icons, standout sections, etc
+- when adding a border radius, pixels tend to work best
+  - percentages will turn the element into an oval/circle
+  - the max amount of pixels that can be given to an element is dependent on its height
+    - you can give it more pixels, but nothing will happen after its height
