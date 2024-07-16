@@ -58,10 +58,10 @@ Sans-serif:
   - don't be scared to try different ones even while designing/developing
 
 - when choosing font sizes, limit choices. use a type scale tool or a predefined range
-- for normal text, use font sized between 16px and 32px 
+- for normal text, use font sizes between 16px and 32px 
 - for long text (like a blog post), try 20px or above
 - for headlines, you can go big. 50px and above with 600 boldness. depends on personality
-- for any text, dont use font weight below 400. 400 is normal. this may cause unreadablilty
+- for any text, dont use font weight below 400 (default). this may cause unreadablilty
 - good to have a system in place for font size and spacing. (type-scale.com)
   - helps with scrambling with different sizes 
 
@@ -104,7 +104,7 @@ Sans-serif:
 - text on images
   - darken or brighten image for readability
   - position text into neutral area of image
-  - put text into a box with
+  - put text into a colored box that will make the text easier to read
 - to account for high res screens, make images 2x the display size (scale factor)
   - if the image in the code is 300x300, the image should be at least 600x600
   - scale factor: actual pixels the screen contains divided by pixels represented on the screen
@@ -114,7 +114,7 @@ Sans-serif:
 
 ~~ICONS~~
 - use good icon packs. loads of free (and paid) ones
-  tools: phosphor icons, ionicons, icons8
+  tools: phosphor icons, ionicons, icons8, heroicons
 - use only one icon pack. dont mix
 - use svg icons or icon fonts. dont use .png or .jpg for icons
   - svgs are vector based meaning they can scale indefinitely without getting blurry
@@ -150,7 +150,7 @@ Sans-serif:
   Ex: box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0,1)
   - first value is x-axis offset. negative value means left
   - second value is y-axis offset. negative value means top
-  - third value is blur-radius. the higher the value, the blurrier
+  - third value is blur-radius. the higher the value, the blurrier the shadow
   - fourth value is spread-radius. the higher the value, the more it will spread
   - fifth value is the color of the shadow. default is black
 - text-shadow can be used for text
@@ -164,3 +164,39 @@ Sans-serif:
   - percentages will turn the element into an oval/circle
   - the max amount of pixels that can be given to an element is dependent on its height
     - you can give it more pixels, but nothing will happen after its height
+
+~~WHITESPACE~~
+- why whitespace:
+  - the right amount of whitespace makes designs look clean modern and polished
+  - whitespace communicates how different pieces of information are related to one another
+  - whitespace implies invisible relationships between the elements of a layout
+- where to use whitespace: 
+  - use tons of whitespace between sections
+  - use a lot of whitespacce between groups of elements
+  - use whitespace between elements
+  - inside groups of elements, try to use whitespace instead of lines
+- how much whitespace
+  - the more some elements (or group of elements) belong together, the closer they should be. the law of proximity
+  - start with a lot of whitespace, maybe even too much. then remove whitespace from there
+    - too much whitespace looks detached, too little looks too crammed
+  - match other design choices. if you have big text or big icons, you need more whitespace
+  - try a hard rule, such as using multiples of 16px for all spacing
+
+~~ VISUAL HEIRARCHY~~
+- visual heirarchy is about:
+  - establishing which elements of a design are the most important ones
+  - drawing attention to these most important elements
+  - defining a path for users to guide them through the page
+- use a combination of position, size, colors, spacing, borders and shadows to establish a meaningful visual heirarchy between elements/components
+- fundamentals:
+  - position important elements closer to the top of the page, where they get more attention
+  - use images mindfully, as they draw a lot of attention (larger images get more attention)
+  - whitespace creates separation, so use whitespace strategically to emphasize elements
+- for text elements: 
+  - use font size, weight, color and whitespace to covey importance
+  - title, subtitles, links, buttons, data points and icons are good text elements to emphasize
+    - you can also de-emphasize less important text, like labels or secondary/additional information
+- visual heirarchy between components:
+  - emphasize an important component using bg color, shadow or border (or multiple)
+  - try emphasizing some component over another by de-emphasizing one
+  - testimonials, cta sections, highlight sections, preview cards, forms, pricing tables, important row/columns in tables, etc are good components to emphasize
