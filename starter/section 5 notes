@@ -200,3 +200,40 @@ Sans-serif:
   - emphasize an important component using bg color, shadow or border (or multiple)
   - try emphasizing some component over another by de-emphasizing one
   - testimonials, cta sections, highlight sections, preview cards, forms, pricing tables, important row/columns in tables, etc are good components to emphasize
+
+~~USER EXPERIENCE~~
+- "design is not just what looks like and feels like. design is how it works" - Steve Jobs
+- User Interface (UI) is the visual presentation of a product. It's how the graphical interface looks and feels like
+  - layout, personality, typography, icons, colors, etc
+- User Experience (UX) is the overall experience the user has while interacting with the product
+  - does the app feel logical and well thought out
+  - does the navigation work intuitively
+  - are the users reaching their goals
+
+- UI and UX Design
+  - UI is graphical interface. UI design is what makes the interface beautiful
+  - UX is expereience with the interface. UX design is what makes the interface functional and useful
+  - UX design cannot exist without UI design
+
+- UX design guiding principles: Goals
+  - a website/application has a reason for existing. A user has a goal for visiting it. A business has a goal for creating it
+  - good UX design aligns the user's goals with the business' goals
+  - Ex: highlighting an option in the product pricing tables
+    - helps the user decide faster on the best option
+    - helps the business maximize revenut
+  - Bad UX Ex: pop up on the website for the user to sign up. can be annoying and cause the user to leave or mistrust
+
+- UX rules for usablility:
+  - dont design complicated layouts. use patterns that users know
+  - make the cta the most prominent element. make the text descriptive
+  - only use blue and underlined text for links
+  - animations should have purpose and fast. between 200-500ms
+  - in forms, align labels and fields in a vertical line to make it easier to scan
+  - offer users good feedback for all actions: errors, form success, etc
+  - place action buttons where they will create an effect (law of locality)
+
+- UX rules for website content:
+  - use a descriptive, keyword focused headline on your page. not vague or too fancy
+  - only include relevant information efficiently. cut out fluff and make content 100% clear
+  - use simple words. avoid technical jargon and smart sounding words
+  - break up long text with subheadings, images, blockquotes, bullet points, etc
