@@ -1,0 +1,15 @@
+~~COMPONENTS AND LAYOUT PATTERNS~~
+- webpages start with elements that can be built into components, which can be turned to layouts, that eventually turn into the webpage.
+- use common elements and components to convey your website's information
+- combine components into layouts using common layout patterns
+- assemble different layout areas into a complete, final page
+- elements -> compontents -> sections -> layouts
+  - see slides for breakdown of each
+
+- when changing the flex direction from row (default) to column, the main axis is rotated 90 degrees
+  - the main axis goes from horizontal to vertical
+  - same goes with the cross axis (perpindicular axis to main axis)
+- this applies to align-items, justify-content and gap
+  - align-items aligns items horizontally instead of vertically
+  - justify-content aligns items vertically instead of horizontally
+  - gap acts like margin-bottom instead of margin-right

@@ -153,7 +153,7 @@ Sans-serif:
 - use border radius on images, buttons, around icons, standout sections, etc
 - when adding a border radius, pixels tend to work best
   - percentages will turn the element into an oval/circle
-  - the max amount of pixels that can be given to an element is dependent on its height
+  - the max amount of pixels that can be given to an element is the same as the max height of the element
     - you can give it more pixels, but nothing will happen after its height
 
 ~~WHITESPACE~~
