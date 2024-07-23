@@ -27,9 +27,9 @@
 - elements can have both display: flex and position: relative
 
 - tables
-  - thead is usually for the first row which shows the label for each columns. defaults: font weight bold. text align center. wraps around tr
-  - tbody is for the rest of the tables
-  - th (table heading) used for any heading outside the thead. like the labels for each row. defaults: font weight bold. text align center. used as individual cells
+  - thead (table head) is usually for the first row which shows the label for each columns. wraps around tr. defaults: font weight bold. text align center.
+  - tbody (table body) is for the rest of the table
+  - th (table heading) used for any heading outside the thead. like the labels for each row. used as individual cells. defaults: font weight bold. text align center.
   - tr (table row) used for each row
   - td (table data) for any other cell. placed inside tr
 
@@ -37,3 +37,62 @@
   - best to style the cells themselves, not tr, thead or tbody
   - you can use one width on the cells in the thead and the rest will follow
     - Ex: thead th { width: 25% }
+
+Section Components
+
+- Navigation
+  - can have nav at the top of the page without sub menu when clicked
+  - small box that hovers over the page
+  - panel that uses entire width of the page. this is becoming more modern
+  - overlays. used a lot on mobiles
+  - secondary nav. uses other subpages inside a page
+
+- Hero Section
+  - text on one side, image on the other. this is more modern
+  - background image with text on top. was popular, not so used anymore
+  - title centered with photos under it
+
+- Footer
+  - standard to have site map links in the Footer
+  - modern to have social icons
+  - modern to have a signup/cta in the Footer
+
+- Call to Action 
+  - normal to have them standout in some way
+  - can be to sign up for the email, contact form
+  - can add social proof. use customer logos, reinforce product features
+
+- Feature Rows
+  - small sections of the page that describe a part of the product/company
+  - multiple of these rows are used to make a whole section.
+  - usually text next to a picture and a link to more info
+
+Patterns
+
+- Row of boxes/cards
+- Grid of boxes/cards
+- Z pattern: feature rows that alternate what side the text/images are
+- F pattern: feature rows that don't alternate. images/text are only one side.
+- Single Column: simple websites. blog posts. mobile sites
+- Sidebar: blogs. table of contents. other info
+- Multi-column, Magazine: multiple columns. lots of info. newspaper/magazine feel
+- Asymmetry/Experimental: unique layouts. made possible with CSS Grid
+
+- to easily add an overlay over an image:
+  - add linear gradient to background-image property that goes from an opaque black to the same opaque black
+  - Ex: background-image: linear-gradient(rgba(34, 34, 34, .6), rgba(34, 34, 34, .6)), url(image.jpg);
+
+- nav vs menu elements:
+  - nav is used for navigation. has links that takes you other places in the webpage
+  - menu is menu buttons in an application
+
+- can isolate an element within a group by using margin-left: auto. also works on margin-right
+  - Ex: 
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+
+    button:last-child {
+      margin-left: auto;
+    }
+  - this separates the last button and pushes it all the way to the right without moving the other 2 buttons
