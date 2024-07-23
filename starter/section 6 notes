@@ -13,3 +13,27 @@
   - align-items aligns items horizontally instead of vertically
   - justify-content aligns items vertically instead of horizontally
   - gap acts like margin-bottom instead of margin-right
+
+- transform property is used to modify an elements
+  - use scale() to scale an image
+  - Ex: img { transform: scale(2) }
+    - this will double the size of the image 
+  - translate(x, y) will move the element a certain way according to the values of x and y.
+    - Ex: transform: translate(0, -50%) will move 50% of actual elements height up
+
+- giving an element position: absolute takes it out of a flex container
+  - remember: the parent must have position: relative
+- flex will not respect widths/heights if it cannot fit all the pixels inside of it.
+- elements can have both display: flex and position: relative
+
+- tables
+  - thead is usually for the first row which shows the label for each columns. defaults: font weight bold. text align center. wraps around tr
+  - tbody is for the rest of the tables
+  - th (table heading) used for any heading outside the thead. like the labels for each row. defaults: font weight bold. text align center. used as individual cells
+  - tr (table row) used for each row
+  - td (table data) for any other cell. placed inside tr
+
+  - border-collapse: collapse. collapses borders near each other to make them look like one
+  - best to style the cells themselves, not tr, thead or tbody
+  - you can use one width on the cells in the thead and the rest will follow
+    - Ex: thead th { width: 25% }
