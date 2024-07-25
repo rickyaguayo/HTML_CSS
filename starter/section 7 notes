@@ -1,0 +1,111 @@
+Process of building a website
+
+1. Define the Project
+- who is it for? client? yourself?
+- what is the website for? providing info? selling something? entertaining?
+- define a target audience. be very specific!
+  - Ex: women, 20-40 yrs old, in Europe, earning around $2000/month, passion for dogs
+
+2. Plan the Project
+- based on business goals, user goals and target audience
+- plan and gather website content: text, images, videos, etc
+- content is usually provided by client, but you can also help
+- for bigger sites, plan out a sitemap. what pages the site needs and how they relate to one another
+- based on the content, plan what sections each page needs to convey the contents message, and in which order
+- content guides the project and design
+- define website personality
+
+3. Sketch Layout and Component Ideas
+- think about what content you need and how you can use them in layout patterns
+- get ideas out of your head. sketch them on pen and paper or use software like figma. simple sketches
+- this is an iterative process. experiment with different layouts and ideas until you reach a good solution
+- you dont need to sketch everything. not everything needs to be perfect before youre ready to jump into the code
+- dont start coding until you have a rough sketch
+
+4. Design and Build Site
+- Use decisions, content and sketches from Steps 1-3 to design and build the site with HTML/CSS
+- after the layout and components are done, you need to design the visual styles
+- create design based on website personality, design guidelines and inspiration
+- use the clients branding for design decisions whenever possible: colors, typography, icons, etc
+
+5. Test and Optimize
+- make sure website works for all the major browsers
+- test on actual mobile device (not just devtools)
+- optimize all images
+- fix simple accessibility issues
+- run lighthouse performance test in Chrome's devtools and try to fix any reported issues
+- think about search engine optimization (SEO)
+
+6. Launch
+- upload to a hosting platform (Netlify)
+- choose/buy an appropriate domain name. should represent brand
+
+7. Maintain and Update
+- keep website updated over time
+- Install analytics software (google analytics, fathom) to get stats from the users. this could influence future changes to the site structure and content
+- a blog is a good way to keep users coming back and good for SEO
+
+~~OMNIFOOD PROJECT~~
+1. Defining the Project
+- Who: for a client
+- What: 
+  - business goal: selling a monthly food subscription
+  - user goal: eating well effortlessly, without spending too much money/time
+- Target Audience: busy people interested in AI, interested in a healthy diet, well paying job
+
+2. Plan the Project
+- Plan and gather content (Already provided to us)
+- Plan sitemap. This is a one page landing page, so no sitemap is needed
+- Define website personality
+  - based on tech centered target audience, startup/upbeat personality is good
+  - elements of calm/peaceful is also good since the company is concerned with wellbeing
+- Plan page sections
+  - Logo and Navigation
+  - Hero
+  - Featured in
+  - How it works
+  - Meals and list of diets
+  - Testimonials and gallery
+  - Pricing and features
+  - CTA
+  - Footer
+
+Responsive design ingredients:
+- Fluid layouts
+  - allows webpage to adapt to current viewport height/width
+  - use % (or vh/vw) unit instead of px that should adapt to viewport
+  - use max-width instead of width
+
+- Responsive units
+  - use rem instead of px
+  - makes it easy to scale the layout down/up
+  - setting 1rem to 10px for easy calculations
+
+- Flexible images
+  - images dont scale automatically as the viewport is changed. must be coded
+  - always use % for image dimensions together with max-width
+
+- Media Queries
+  - bring responsive sites to life
+  - changes CSS styles on certain viewport widths (breakpoints)
+
+- Desktop first vs Mobile first
+  - desktop first: write CSS for big screens, use media queries to adjust for small screens
+  - mobile first: write CSS for small screens, use media queries to adjust for big screens
+    - forces to reduce websites/apps to absolute essentials
+
+- max-width
+  - responsive
+  - if the width of the container is bigger than the max-width of an element, the width of the element will be max-width. if the container is smaller, than the width of the element will match that width
+  - this is a better practice than just width and %
+
+- rem (root em)
+  - based off the font-size of the root element (html element)
+  - if not defined in html element, it will usually be 16px
+
+  - when defining a root font-size for rem, use %. this allows us to respect any font-size change from the user
+  - Ex: html {
+      font-size: 10px; ❌
+      font-size: 62.5%; ✅
+  }
+    - if the user changes their font size to 18px, then rems will be a percentage of that rather than a hard coded 10px
