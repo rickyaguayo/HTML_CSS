@@ -79,6 +79,8 @@ SECTION 3 - CSS
   - Ex: class - li:first-child. element - h1::first-letter
 - ::before and ::after require the content property. even if left blank ("")
 - psuedo elements inherently have inline-block
+- psuedo elements cannot be added to images because img tags are not allowed to have children
+- ::before and ::after can only be used once per element
 
 - adjacent sibling selector is the next sibling. used with +
   - Ex: h3 + p { color: red; }

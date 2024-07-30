@@ -109,3 +109,35 @@ Responsive design ingredients:
       font-size: 62.5%; ✅
   }
     - if the user changes their font size to 18px, then rems will be a percentage of that rather than a hard coded 10px
+
+
+NOTES ON HEADER:
+- header should be widest thing on page. sticky
+  - flexbox
+- Nav: make an ul and style the li's.
+  - last li in the list may be a different styled cta
+    - give it a unique class or use :last-child
+  - add visual changes when hovering
+  - flexbox baby
+  - dont forget to make links inline-block to apply padding on all four sides
+
+NOTES ON HERO: 
+- grid works great if using two parts for your hero.
+- flex for the inside parts of hero to adjust how you want
+- make sure to emphasize the more important cta if there is more than one
+- tinker with line-height, font weight and font size for any text
+- when using multiple images with faces, give them a small border to add a little design element
+
+- make utility classes (in a different css file if needed) for anything that doesnt need to be added to a unique class
+
+NOTES ON HOW IT WORKS:
+- if height is not being applied to an element, then you can use padding-bottom to add height
+
+NOTES ON FEATURED IN:
+- making logos the same color and gray. use:
+  - filer: brightness(0);
+  - opacity: 50%; (this value can be whatever)
+
+- inline elements cannot have margin/padding on top and bottom, only left and right.
+- block elements can have margin/padding on all sides. margin: 0 auto only applies to block elements as well. (not inline-block)
+
