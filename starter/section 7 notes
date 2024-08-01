@@ -132,12 +132,30 @@ NOTES ON HERO:
 
 NOTES ON HOW IT WORKS:
 - if height is not being applied to an element, then you can use padding-bottom to add height
+- fill in spaces with designs
 
 NOTES ON FEATURED IN:
 - making logos the same color and gray. use:
   - filer: brightness(0);
   - opacity: 50%; (this value can be whatever)
 
+NOTES ON MEALS:
+- icons that use html elements are easier than full svgs
+- flex is perfect to add space between elements
+- even though page is mostly left aligned, you can center one section to make it come together
+- use reusable classes and keep them strict. if you need to modify a reusable class, add a utility class instead
+  - containter and grid!
+
+NOTES ON TESTIMONIALS:
+- use <figure> blocks for things like this that is good for the img, quote and caption (<figcaption>)
+- <figcaption> can only be used inside of a <figure> element
+- use <blockquote> for the quote
+- images are inherently inline elements which add a tiny sliver of space in between. to remove this, make the images block elements
+- on grid-template-columns you can use numbers like percentages accompanied with fr to adjust more precisely
+  - Ex: grid-template-columns: 55fr 45fr;
+
+
 - inline elements cannot have margin/padding on top and bottom, only left and right.
-- block elements can have margin/padding on all sides. margin: 0 auto only applies to block elements as well. (not inline-block)
+- block and inline-block elements can have margin/padding on all sides
+  - margin: 0 auto only applies to block elements as well. (not inline-block)
 
