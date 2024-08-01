@@ -153,6 +153,7 @@ NOTES ON TESTIMONIALS:
 - images are inherently inline elements which add a tiny sliver of space in between. to remove this, make the images block elements
 - on grid-template-columns you can use numbers like percentages accompanied with fr to adjust more precisely
   - Ex: grid-template-columns: 55fr 45fr;
+- overflow: hidden to hide overflow on animations
 
 
 - inline elements cannot have margin/padding on top and bottom, only left and right.
