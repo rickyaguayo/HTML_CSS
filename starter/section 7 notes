@@ -142,19 +142,23 @@ NOTES ON FEATURED IN:
 NOTES ON MEALS:
 - icons that use html elements are easier than full svgs
 - flex is perfect to add space between elements
-- even though page is mostly left aligned, you can center one section to make it come together
+- even though entire page is mostly left aligned, you can center one section to make it come together
 - use reusable classes and keep them strict. if you need to modify a reusable class, add a utility class instead
   - containter and grid!
 
 NOTES ON TESTIMONIALS:
-- use <figure> blocks for things like this that is good for the img, quote and caption (<figcaption>)
+- use <figure> blocks for things like this that is good for the img, quote (<blockquote>) and caption (<figcaption>)
 - <figcaption> can only be used inside of a <figure> element
-- use <blockquote> for the quote
 - images are inherently inline elements which add a tiny sliver of space in between. to remove this, make the images block elements
 - on grid-template-columns you can use numbers like percentages accompanied with fr to adjust more precisely
   - Ex: grid-template-columns: 55fr 45fr;
 - overflow: hidden to hide overflow on animations
 
+NOTES ON PRICING/FEATURES
+- helper classes!
+- emphasize important parts (prices, other data)
+- demphasize non important parts or cards
+- pay attention to spaacing
 
 - inline elements cannot have margin/padding on top and bottom, only left and right.
 - block and inline-block elements can have margin/padding on all sides
