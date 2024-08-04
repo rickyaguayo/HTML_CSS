@@ -158,7 +158,19 @@ NOTES ON PRICING/FEATURES
 - helper classes!
 - emphasize important parts (prices, other data)
 - demphasize non important parts or cards
-- pay attention to spaacing
+- pay attention to spacing
+
+NOTES ON CTA 
+- the darker a section is, the darker the box-shadow has to be
+- use form element to hold all inputs/selects/etc
+- input elements require type
+- tie inputs with labels together with for attribute
+- select elements require option elements
+- use placeholder attribute for placeholder text
+- give input/select elements the required attribute to make it required
+- if a img is used via css, give the html element a role and aria-label for accessiblity
+- grid items will inherently take up the entire grid cell. you can shrink it by using align-self to a certain position
+- *:focus to style all focus styles
 
 - inline elements cannot have margin/padding on top and bottom, only left and right.
 - block and inline-block elements can have margin/padding on all sides
