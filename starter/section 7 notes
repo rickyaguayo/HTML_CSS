@@ -168,9 +168,15 @@ NOTES ON CTA
 - select elements require option elements
 - use placeholder attribute for placeholder text
 - give input/select elements the required attribute to make it required
-- if a img is used via css, give the html element a role and aria-label for accessiblity
+- if an img is used via css, give the html element a role and aria-label for accessiblity
 - grid items will inherently take up the entire grid cell. you can shrink it by using align-self to a certain position
 - *:focus to style all focus styles
+
+NOTES ON FOOTER
+- <footer> should live outside <main> element
+- flexbox and grid
+- try to organize in a way that theres little white space
+- href="mailto:" for emails and href="tel:" for phone numbers
 
 - inline elements cannot have margin/padding on top and bottom, only left and right.
 - block and inline-block elements can have margin/padding on all sides
