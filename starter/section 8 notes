@@ -1,5 +1,4 @@
 MEDIA QUERIES
-
 - piece of code used to overwrite specific styles
 - if there is conflict between media queiries, the one written last will be applied
 - rem/em do not respond to font sized set in the html tag in media queiries. they only respond the default browser font size. (usually 16px)
@@ -7,6 +6,18 @@ MEDIA QUERIES
 - in some browsers, rem can be buggy with media queiries. em is better in this case
 - by sizing everything using rem when initially building, everything can easily be changed by changing the font size in the html tag.
 - media queiries should work for every 200-300 pixels
+
+- to hide elements without using display: none
+  - make it invisible:
+    - opacity: 0
+  - do not allow mouse/keyboard to be able to find it:
+     - pointer-events: none
+  - hide it from screen readers:
+    - visibility: hidden;
+
+- when using overflow:hidden on body/html there cant be anything absolute positioned to it. if there is, a position:relative must be given to the parent of the absolutely positioned element
+
+- when working with transition, transform is a better property to use than left/top/etc.
 
 - inline elements can be affected by text-align: center
 - transitions do not work when an element has display:none
