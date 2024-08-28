@@ -22,3 +22,67 @@ MEDIA QUERIES
 - inline elements can be affected by text-align: center
 - transitions do not work when an element has display:none
   - use opacity: 0 instead
+
+- use toggle method when wanting to remove and add a class to an element.
+  -Ex: headerEl.classList.toggle("nav-open")
+
+- there are simple js methods that can make certain actions easy
+  - .startsWith("#")
+  - .contains("class")
+  - .scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+  - .scrollIntoView({ behavior: "smooth" })
+
+- add a browser prefix to css properties if needed. must be placed before the regular css property
+  .class {
+    -webkit-backdrop-filter: blur(10px)
+    backdrop-filter: blur(10px)
+  }
+
+  - prefix may be different depending on the browser.
+    - caniuse.com for browser support and which prefixes to use
+
+- use lighthouse tool in google chrome to find out what kinds of things can be improved on your website
+  - meta description will be needed
+  - add favicon for the icon in the browser tablets
+    - <link rel="icon" href="img/icon.png" />
+
+- favicons: icons for browser tabs, history, bookmarks, etc.
+  - needs a few of them for every iOS
+  Ex: <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+  
+  - for android, you need to create manifest in the root file and add the icons there
+  Ex: {
+  "icons": [
+    {
+      "src": "img/favicon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "img/favicon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
+
+- optimize images by resizing them to double the biggest size they will be.
+- futher optimization from squoosh.com. this will compress the images futher. be cautious of image quality when messing with compression settings
+- some browsers will not be able to render certain image file types. 
+  - use <picture> to add fallbacks images.
+  Ex: <picture>
+        <source srcset="img/hero.webp" type="image/webp" />
+        <source srcset="img/hero-min.png" type="image/png" />
+          <img
+            src="img/hero-min.png"
+            class="hero-img"
+            alt="woman enjoying food, meals in storage containers, food bowls on a table"
+          />
+      </picture>
+
+  - set the fallback img to the img tag.
