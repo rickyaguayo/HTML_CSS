@@ -114,11 +114,11 @@ Responsive design ingredients:
 NOTES ON HEADER:
 - header should be widest thing on page. sticky
   - flexbox
-- Nav: make an ul and style the li's.
+- Nav: make a ul and style the li's.
   - last li in the list may be a different styled cta
     - give it a unique class or use :last-child
   - add visual changes when hovering
-  - flexbox baby
+  - flexbox, baby
   - dont forget to make links inline-block to apply padding on all four sides
 
 NOTES ON HERO: 

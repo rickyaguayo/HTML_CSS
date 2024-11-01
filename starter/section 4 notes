@@ -1,6 +1,7 @@
 SECTION 4 - LAYOUTS
 
 - 2 kinds of layouts:
+
   1. Page layout: Layout of the entire page composing of sections
   2. Section layout: Layout of individual sections that make up the page
 
@@ -10,6 +11,7 @@ SECTION 4 - LAYOUTS
   3. CSS Grid: For laying out elements in a 2 dimensional gird. Perfect for page layouts and complex component layouts
 
 FLOATS:
+
 - Floats are like absolute positioning as in it leaves the normal flow of the page. But unlike absolute positioning, the rest of the elements will wrap around a floated element.
 - The other elements around the floated element still act as they are started on the left of the page. Just scooted because of the floated element
   - If you want the element to start "scooted", it also has to be floated
@@ -17,19 +19,19 @@ FLOATS:
 - Container of floated elements will not adjust its height to the element causing collapsing elements.
 - Collapsing elements - when an elements loses its height because the children are taking out of flow
 
-- The clear property puts things back into flow by clearing elements that precede it. 
-Ex: 
+- The clear property puts things back into flow by clearing elements that precede it.
+  Ex:
   div {
-    clear: right | left | both
+  clear: right | left | both
   }
 - If you clear one side, it will clear all elements that are floated in that direction. Both will clear everything
 
 - Clearfix hack: before, one would have to add a div (as a sibing to the floated elements) and clear it to fix floated elements flow. The clearfix hack adds a cleared pseudo element with the clear property to avoid adding a bunch of empty divs with the clear property on it. Add this class to the element that should clear the floated elements
-Ex: .clearfix::after {
+  Ex: .clearfix::after {
   clear: both;
   display: block;
   content: "";
-}
+  }
 - clearing only works on block elements and pseudo elements are inline-block, which is why you have to change the display.
 
 - box-sizing: border-box;: removes the calculation of the box model. when specifying the width, it includes everything inside the border
@@ -37,6 +39,7 @@ Ex: .clearfix::after {
 - padding and borders take from the width rather than adding to it
 
 FLEXBOX:
+
 - Flexbox is a set of related CSS properties for building 1 dimensional layouts
 - The main idea behind flexbox is that empty space inside a container element can be automatically divided by its child elements
 - Flexbox makes it easy to automatically align items to one another inside a parent container, both horizontally and vertically
@@ -45,15 +48,14 @@ FLEXBOX:
 
 - Container of flexed items must have display: flex; and the children will become flex items. this is the flex container.
 - the main axis is horizontal. cross axis is vertical
-- Flexed items will automatically take the height of the tallest sibling. 
+- Flexed items will automatically take the height of the tallest sibling.
 - align-items changes the vertical pattern of the flexed items. default is stretch (along the cross axis)
 - justify-content will change the horizontal pattern. default is flex-start (along the main axis)
 
-- order, by default, gives all elements the value of 0. which means giving an element the value of -1, then it will be the first element. giving an element 1 will make it the last one. (works like z-index)
+- order, by default, gives all elements the value of 0. which means giving an element the value of -1 will be the first element. giving an element 1 will make it the last one. (works like z-index)
 - gap adds a gap between flex items without having to add padding/margin
 - if you add a margin, then both the gap and the margin will appear. the margin will be in between the item and the gap
 
-- flex property is a shorthand for flex-grow, flex-shrink and flex-basis
 - flex-basis is used to set a width without using the width property
   - default is auto
   - if the item is larger than the flex-basis, then it will just use whatever space it needs
@@ -63,6 +65,7 @@ FLEXBOX:
   - flex-shrink: 1; means items are allowed to shrink
   - flex-shrink: 0; means items aren't allowed to shrink and will take the width (or flex-basis) given to them
 - flex-grow is used to allow items to take up space evenly.
+
   - default is 0
   - the number given is a multiplier. if you set the value to 2, then that item will get double the remaining space than the rest. it doesnt double the width of the item, it gives the item double the space that was in between beforehand
 
@@ -71,13 +74,14 @@ FLEXBOX:
   - Ex: flex: 0 0 200px;
 - if only one number is used, it will assume flex-grow.
   - flex: 1 === flex-grow: 1;
-- two unitless numbers will yield assume flex-grow then flex-shrink
+- two unitless numbers will assume flex-grow then flex-shrink
   - Ex: flex: 0 1
 - two numbers and one has a unit assumes flex-grow then flex-basis
   - Ex: flex: 0 10px
 - it is better to use flex shorthand than any of them alone
 
 CSS-GRID:
+
 - set of properties to build a 2 dimensional grid
 - main idea behind css-grid is to divide a container into rows/columns and fill it with children
 - display: grid; sets up container for grid
@@ -91,34 +95,35 @@ CSS-GRID:
 - like flexbox, preset heights/widths will be used unless otherwise specified. other elements around it will accomadate to specified heights/widths
 - gap can also be used to specify a gap in css grid. this will use the same gap for both columns and rows
 - if different gaps are needed, use column-gap or row-gap
-- also able to use gap for both. row gap is the first value and column-gap is the second
-  - Ex: gap: 10px 20px (row column)
+- gap property can be used for both. row-gap is the first value and column-gap is the second
+  - Ex: gap: 10px 20px (row, column)
 - grid also uses align-items but uses justify-items as well
 - can use align-content and justify-content, but not as used within grid
 - explicit row: row where you explicitly defined the width/height
 - implicit row: row that takes leftover items outside of explicit rows
 
 - items can be placed in a certain spot using grid-column and grid-row. the values are the starting row/col and the ending row/col.
+
   - Ex: .item-3 {
-      grid-column: 2 / 3;
-      grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
     }
-  - this places the item between columns 2 and 3. and between rows 1 and 2. (numbers are representing grid-lines. see screenshot. can also turn on grid in dev tools to see lines)
+  - this places the item between columns 2 and 3 and between rows 1 and 2. (numbers are representing grid-lines. see screenshot. can also turn on grid in dev tools to see lines)
   - shorthand is just the first number if the second number is one above the first
   - Ex: .item-3 {
-      grid-column: 2;
-      grid-row: 1;
+    grid-column: 2;
+    grid-row: 1;
     } (this is the same as above)
   - if the second number isnt one above the first, it will stretch itself between the 2 numbers
   - Ex: .item-3 {
-      grid-column: 2 / 4; 
-      grid-row: 1;
+    grid-column: 2 / 4;
+    grid-row: 1;
     }
   - the span keyword can be used in place of the second number.
     - Ex: grid-column: 2 / span 2; (this is the same as above)
   - a shorthand for spanning to the end is using -1
     - Ex: grid-column: 1 / -1; spans the whole row
 
-- with grid, align and justify is still used. however for the keywords are a bit different from flexbox. 
-  - end instead of flex-end. start instead of flex-end 
+- with grid, align and justify is still used. however for the keywords are a bit different from flexbox.
+  - end instead of flex-end. start instead of flex-start
 - justify/align-self is to override properties set on the row/cols

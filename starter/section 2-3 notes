@@ -9,23 +9,24 @@ SECTION 2 - HTML
 - semantic HTML means using certain tags for certain purposes
   - also helps with accessibilty and analysis for search engines
 
-
 SECTION 3 - CSS
 
 - unitless line-height is the value given times the font size
-  Ex: 
-    font-size: 16px
-    line-height: 2 (line height is 32px)
+  Ex:
+  font-size: 16px
+  line-height: 2 (line height is 32px)
 - text-decoration can also take values like border
   - Ex: text-decoration: underline dotted #f7f7f7
 - when colors in all 3 channel pairs are the same, it yields a gray
-  - #f7f7f7 
+
+  - #f7f7f7
   - rgb(183, 183, 183)
   - there are 256 pure grays to choose from
 
 - :nth-child() takes keywords
   - Ex: li:nth-child(even) { color: red }
 - when using psuedo classes like first or last child to select, it will choose the actual first/last child
+
   - article p:first-child {}. This will only work if the first child of the article is a p, otherwise nothing will happen
 
 - :link targets anything with an href attribute
@@ -33,6 +34,7 @@ SECTION 3 - CSS
 - define link psuedo classes in order of :link, :visited, :hover, then :active (LHVA)
 
 - CSS heirarchy:
+
   1. !important
   2. Inline styles
   3. Id selectors
@@ -43,9 +45,8 @@ SECTION 3 - CSS
 - most inherited styles are related to text. font-family, font-size, color, etc.
   - not all properties from parent elements get inherited. like border
   - universal selector is used to inherit all properties to elements
-  
 - border is still considered to be inside the element
-- CSS Box Model: 
+- CSS Box Model:
   - Content: text, images, etc
   - Border: a line around the element still inside of the element
   - Padding: Invisible space around the content, inside of the element
@@ -53,9 +54,9 @@ SECTION 3 - CSS
   - Fill area: Area that gets filled with background color of background image. This includes the content and the padding, but not the border or margin
 - default height and width is calculated by adding border + padding + content
 - when adding space between sections. margin-bottom is recommended
-- collapsing margins: when two margins occupy the same space, they are not added together. Only one (the bigger one) will be visible. 
+- collapsing margins: when two margins occupy the same space, they are not added together. Only one (the bigger one) will be visible.
   Ex: <p>upper</p>
-      <h3>lower</h1>
+  <h3>lower</h3>
 
       p {
         margin-bottom: 15px;
@@ -64,6 +65,7 @@ SECTION 3 - CSS
       h3 {
         margin-top: 40px;
       }
+
   - the space between will be only 40px. not 55px
 
 - inline elements applies the box model in a different way:

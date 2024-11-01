@@ -28,7 +28,7 @@ Web Design ingredients:
   9. User Experience
   10. Components/layouts
 
-~~~TYPFACE~~~
+~~~TYPOGRAPHY~~~
 Serif:
   - creates a traditional/classic look and feel
   - conveys trustworthiness
@@ -98,6 +98,8 @@ Sans-serif:
   - darken or brighten image for readability
   - position text into neutral area of image
   - put text into a colored box that will make the text easier to read
+  - image blur
+  - floor fade. image fades to black towards the bottom of the page and put the text there
 - to account for high res screens, make images 2x the display size (scale factor)
   - if the image in the code is 300x300, the image should be at least 600x600
   - scale factor: actual pixels the screen contains divided by pixels represented on the screen
@@ -118,8 +120,11 @@ Sans-serif:
   - for feature blocks
   - associated with actions and label them (unless there is no space or the icon is 100% clear)
   - as bullet points
-- to keep icons neutral use the same color as the text. to attract attention to them, a different color
-- dont confuse the user. icons need to fit the text or action
+- to keep icons neutral, use the same color as the text. to attract attention to them, a different color
+- dont confuse the user:
+  - icons need to fit the text or action
+  - should be instantly recognizable
+- icons should not be a center piece but rather a support for the bigger picture
 - dont make icons larger than what they were designed for. enclose them in a shape if needed
 
 ~~SHADOWS~~
@@ -140,7 +145,7 @@ Sans-serif:
   - experiement with mouse interaction (hover and click)
   - experiement with glows (colored shadows)
 - box-shadow can have 5 values:
-  Ex: box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0,1)
+  Ex: box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0, 1)
   - first value is x-axis offset. negative value means left
   - second value is y-axis offset. negative value means top
   - third value is blur-radius. the higher the value, the blurrier the shadow
@@ -165,7 +170,7 @@ Sans-serif:
   - whitespace implies invisible relationships between the elements of a layout
 - where to use whitespace: 
   - use tons of whitespace between sections
-  - use a lot of whitespacce between groups of elements
+  - use a lot of whitespace between groups of elements
   - use whitespace between elements
   - inside groups of elements, try to use whitespace instead of lines
 - how much whitespace
@@ -186,7 +191,7 @@ Sans-serif:
   - use images mindfully, as they draw a lot of attention (larger images get more attention)
   - whitespace creates separation, so use whitespace strategically to emphasize elements
 - for text elements: 
-  - use font size, weight, color and whitespace to covey importance
+  - use font size, weight, color and whitespace to convey importance
   - title, subtitles, links, buttons, data points and icons are good text elements to emphasize
     - you can also de-emphasize less important text, like labels or secondary/additional information
 - visual heirarchy between components:
@@ -205,7 +210,7 @@ Sans-serif:
 
 - UI and UX Design
   - UI is graphical interface. UI design is what makes the interface beautiful
-  - UX is expereience with the interface. UX design is what makes the interface functional and useful
+  - UX is experience with the interface. UX design is what makes the interface functional and useful
   - UX design cannot exist without UI design
 
 - UX design guiding principles: Goals
@@ -213,7 +218,7 @@ Sans-serif:
   - good UX design aligns the user's goals with the business' goals
   - Ex: highlighting an option in the product pricing tables
     - helps the user decide faster on the best option
-    - helps the business maximize revenut
+    - helps the business maximize revenue
   - Bad UX Ex: pop up on the website for the user to sign up. can be annoying and cause the user to leave or mistrust
 
 - UX rules for usablility:
